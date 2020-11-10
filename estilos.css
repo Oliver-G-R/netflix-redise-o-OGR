@@ -160,6 +160,10 @@ body{
     .section-card{
         grid-template-columns: repeat(2 , 1fr);
     }
+
+    .card-serie:hover{
+        transform: none;
+    }
 }
 
 @media(max-width: 497px){
