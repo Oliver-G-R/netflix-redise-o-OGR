@@ -51,10 +51,15 @@ $(document).ready(() => {
 
 const scrollNav = () => {
     var scroll = $(window).scrollTop()
+    console.log(scroll)
 
-    scroll < 100 
+    scroll < 381 
         ? $('.header-section').removeClass('activ')
         : $('.header-section').addClass('activ')
+
+    scroll < 50 
+        ? $('.play-section').removeClass('activ')
+        : $('.play-section').addClass('activ')
 }
 
 const createCar = (imgData , sectionCard) => {
